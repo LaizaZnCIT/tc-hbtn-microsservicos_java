@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "9422f7eb-3e2b-42a3-bd1b-fc9082a682b8",
+		"name": "CLIENTES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nome\": \"Laíza Z. N.\",\n    \"email\": \"laiza@email.com\",\n    \"idade\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/api-jpa-h2/addClient"
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/api-jpa-h2/findAllClients"
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/api-jpa-h2/findClientById/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_BY_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8081/api-jpa-h2/removeClientById/1"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8081/api-jpa-h2/updateClientById/1"
+			},
+			"response": []
+		}
+	]
+}
