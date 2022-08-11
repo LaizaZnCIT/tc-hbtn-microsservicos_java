@@ -1,4 +1,4 @@
-package com.example.MegaSenaAPI;
+package com.MegaSenaAPI;
 
 import java.util.ArrayList;
 import java.util.Collections;
